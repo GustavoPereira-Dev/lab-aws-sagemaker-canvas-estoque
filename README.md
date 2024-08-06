@@ -42,4 +42,20 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 -   Exporte os resultados e analise as previsões geradas.
 -   Documente suas conclusões e qualquer insight obtido a partir das previsões.
 
+### 5. Resultado
+
+- Dataset utilizado: "dataset-1000-com-preco-promocional-e-renovacao-estoque"
+- Alvo: Coluna "QUATIDADE_ESTOQUE"
+- Id: "ID_PRODUTO"
+- Validação de Datas: "DATA_EVENTO"
+
+#### Métricas
+
+- AVGwQL (0.39): chamado de Erro Quadrático Médio Ponderado, é uma métrica que combina o RMSE com pesos diferentes para diferentes amostras que pode ser utilizada quando algumas amostras são mais importantes que outras. Valores baixos indicam melhor ajuste.
+- MAPE (0,132): chamado de Erro Absoluto Percentual Médio, é usado para avaliar modelos de regressão, especialmente em previsão de séries temporais, sendo expresso em porcentagem, facilita a comunicação dos resultados para pessoas não técnicas. Um MAPE baixo indica que o modelo está prevendo com precisão.
+- WAPE (0,108): chamado de Erro Percentual Absoluto Ponderado, é semelhante ao MAPE com a diferença que pondera os erros percentuais absolutos. É útil para previsões de demanda, onde a magnitude das observações varia muito. Valores baixos indicam melhor ajuste.
+- RMSE (6): chamado de Raiz do Erro Quadrático Médio, é uma métrica amplamente usada para medir o desempenho de modelos de regressão que calcula o erro médio nas unidades originais da variável alvo. Valores baixos indicam melhor ajuste do modelo.
+- R² (0.240): chamado de Coeficiente de Determinação, ele avalia a proporção da variabilidade da variável dependente explicada pelo modelo. Varia entre 0 e 1; quanto mais próximo de 1, melhor o ajuste do modelo aos dados observados.
+- MASE (0,50): chamado de Erro Médio Absoluto de Escala Média, ele compara o erro absoluto médio do modelo com o erro absoluto médio de um modelo de referência (como a média móvel) e é útil para séries temporais com sazonalidade.
+
 
